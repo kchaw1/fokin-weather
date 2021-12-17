@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
 
 export default function Loading() {
     {/* 
@@ -9,6 +9,7 @@ export default function Loading() {
         css와는 다르게 부모로부터 상속받지 않는다.
     */}
     return <View style={styles.container}> 
+        <StatusBar barStyle='dark-content' />
         <Text style={styles.text}>날씨 정보를 가져오는 중입니다.</Text>
     </View>
 }
